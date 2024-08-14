@@ -3,8 +3,11 @@ import { Container, PageContainer } from "./styles";
 
 import { NavigationItem, Sidebar } from "@src/components/shared/SideBar";
 import { LayoutDashboard } from "lucide-react";
+import { useMediaQueries } from "@src/hooks/useMediaQueries";
 
 export function MainLayout() {
+  const { isMatches } = useMediaQueries("(max-width: 610px)");
+
   const items: NavigationItem[] = [
     {
       Icon: LayoutDashboard,
@@ -14,7 +17,7 @@ export function MainLayout() {
 
   return (
     <Container>
-      <Sidebar items={items} />
+      {isMatches || <Sidebar items={items} />}
       <PageContainer>
         <Outlet />
       </PageContainer>
