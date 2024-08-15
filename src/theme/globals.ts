@@ -50,7 +50,7 @@ const theme = {
     },
     light: {
       1: "#FAFAFA",
-      2: "#E5E5E5",
+      2: "#F4F4F4",
       3: "#C8C8C8",
     },
     dark: {

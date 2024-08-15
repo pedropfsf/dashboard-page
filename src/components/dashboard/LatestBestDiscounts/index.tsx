@@ -27,7 +27,7 @@ export function LatestBestDiscounts({ items }: LatestBestDiscounts) {
           sx={{
             width: "100%",
             height: 260,
-            overflowY: "scroll",
+            overflowY: "auto",
             bgcolor: "background.paper",
           }}
         >

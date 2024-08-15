@@ -7,15 +7,18 @@ import {
   Users,
 } from "lucide-react";
 import { Grid, Typography } from "@mui/material";
+
 import { Counter } from "@src/components/dashboard/Counter";
 import { TotalSalesYearChart } from "@src/components/dashboard/TotalSalesYearChart";
 import { LatestBestDiscounts } from "@src/components/dashboard/LatestBestDiscounts";
+import { TopBestSellingItems } from "@src/components/dashboard/TopBestSellingItems";
 import { latestBestDiscountsMock } from "@src/constants/latest-best-discount";
+import { ComparisonSalesRestaurants } from "@src/components/dashboard/ComparisonSalesRestaurants";
 
 export function DashboardPage() {
   return (
     <div>
-      <Typography variant="h3" marginBottom="32px">
+      <Typography variant="h4" marginBottom="32px">
         Dashboard
       </Typography>
 
@@ -38,14 +41,17 @@ export function DashboardPage() {
         <Grid item lg={2} md={4} sm={6} xs={12}>
           <Counter Icon={Star} title="Garçom" value="Rodrigo Andrade" />
         </Grid>
-      </Grid>
-
-      <Grid container spacing="8px">
         <Grid item lg={8} md={6} sm={12} xs={12}>
           <TotalSalesYearChart />
         </Grid>
         <Grid item lg={4} md={6} sm={12} xs={12}>
           <LatestBestDiscounts items={latestBestDiscountsMock} />
+        </Grid>
+        <Grid item lg={4} md={6} sm={12} xs={12}>
+          <TopBestSellingItems />
+        </Grid>
+        <Grid item lg={8} md={6} sm={12} xs={12}>
+          <ComparisonSalesRestaurants />
         </Grid>
       </Grid>
     </div>
