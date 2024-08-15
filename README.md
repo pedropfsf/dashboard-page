@@ -12,6 +12,20 @@
 
 <p align="center">Projeto para apresentação de uma página de dashboard</p>
 
+## Instalação
+Para instalar e começar a rodar o sistema basta rodar os seguintes comandos
+
+Instalar as dependências
+```
+npm i
+```
+
+Rodar o projeto localmente
+```
+npm run dev
+```
+
+
 ## Sobre
 RestifyPro é uma plataforma web com o objetivo de melhorar a logística de restaurantes de uma empresa. A plataforma permite gerenciar informações de restaurantes, garçons, itens (hambúrgueres, bebidas, pratos), vendas e assim por diante. Todas essas informações serão usadas como histórico para o dashboard principal da visão do administrador da empresa desse restaurante.
 
