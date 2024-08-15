@@ -10,4 +10,5 @@ export const PageContainer = styled.div`
   background-color: ${theme.colors.light[2]};
   width: 100%;
   height: 100vh;
+  overflow-y: scroll;
 `;
